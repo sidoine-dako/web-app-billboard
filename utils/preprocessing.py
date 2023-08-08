@@ -4,8 +4,9 @@ import pandas as pd
 
 class Preprocessor:
     
-    def __init__(self,filepath):
+    def __init__(self,filepath=None,df=None):
         self.filepath = filepath
+        self.df = df
         
     def import_data(self):
         # Import the csv data file
